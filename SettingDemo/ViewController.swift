@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func openSettings(sender: AnyObject) {
+        let url:NSURL! = NSURL(string : "prefs:root=")
+        UIApplication.sharedApplication().openURL(url)
+    }
 
 }
 
